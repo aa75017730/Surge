@@ -1,65 +1,48 @@
-#!name=¾©¶«Ä£¿é
-#!desc=Ç©µ½Ä£¿éÅäÖÃ
-# SurgeµÄTask&Cookies½Å±¾Ä£¿éµØÖ·: https://raw.githubusercontent.com/kitnoob/lxk_script/main/Surge/lxk0301_Task.sgmodule.sgmodule
+#!name=äº¬ä¸œæ¨¡å—
+#!desc=ç­¾åˆ°æ¨¡å—é…ç½®
+# Surgeçš„Task&Cookiesè„šæœ¬æ¨¡å—åœ°å€: https://raw.githubusercontent.com/kitnoob/lxk_script/main/Surge/lxk0301_Task.sgmodule.sgmodule
 
 [Script]
-¾©¶«¶àºÏÒ»Ç©µ½ = type=cron,cronexpr="5 0,12,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
-5G³¬¼¶Ã¤ºĞ = type=cron,cronexp="0 0,1-23/3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_mohe.js
-¾©¶«×Ê²ú±ä¶¯Í¨Öª = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bean_change.js
-Áì¾©¶¹¶îÍâ½±Àø = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bean_home.js
-¶«¶«³¬ÊĞ¶Ò»»½±Æ· = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_blueCoin.js
-¿Ú´üÊéµê = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bookshop.js
-¾©¶«Æû³µ = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_car.js
-¾©¶«Æû³µ¶Ò»» = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_car_exchange.js
-Ç©µ½ÁìÏÖ½ğ = type=cron,cronexp="2 0-23/4 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_cash.js
-¾©Ï²²Æ¸»µº = type=cron,cronexp="5 0,8,13,19 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_cfd.js
-Ò¡¾©¶¹ = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_club_lottery.js
-crazyJoyÈÎÎñ = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy.js
-¼à¿ØcrazyJoy·Öºì = type=cron,cronexp="10 12 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy_bonus.js
-crazyJoy¹Ò»ú = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy_coin.js
-ÌìÌìÌá¶ì = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_daily_egg.js
-¾©Ï²¹¤³§ = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_dreamFactory.js
-¾©¶«¼ÒÍ¥ºÅ = type=cron,cronexp="1 12,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_family.js
-¶«¶«Å©³¡ = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_fruit.js
-»ñÈ¡»¥ÖúÂë = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_get_share_code.js
-»·ÇòÌôÕ½ÈüµÚ¶ş¼¾ = type=cron,cronexp="0 9,12,20,21 8-31 3 *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_global.js
-¾©¶«¹ú¼ÊÃ¤ºĞ = type=cron,cronexp="0 9,12,20,21 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_global_mh.js
-¶«¶«¹¤³§ = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jdfactory.js
-¾©¶«×¬×¬ = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jdzz.js
-¾©¶«³èÍôÍô = type=cron,cronexp="15 0-23/2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy.js
-¾©¶«³èÍôÍôÎ¹Ê³ = type=cron,cronexp="15 0-23/1 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy_feedPets.js
-³èÍôÍôÇ¿ÖÆÎª±ğÈËÖúÁ¦= type=http-request,pattern=^https:\/\/draw\.jdfcloud\.com\/\/common\/pet\/enterRoom\/h5\?invitePin=.*(&inviteSource=task_invite&shareSource=\w+&inviteTimeStamp=\d+&openId=\w+)?&reqSource=weapp|^https:\/\/draw\.jdfcloud\.com(\/mirror)?\/\/pet\/helpFriend\?friendPin,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy_help.js
-³èÍôÍô»ı·Ö¶Ò»»½±Æ· = type=cron,cronexp="0 0-16/8 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy_reward.js
-³èÍôÍôÑûÇëÖúÁ¦ÓëÈüÅÜÖúÁ¦ = type=cron,cronexp="15 10 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy_run.js
-³èÍôÍôÍµºÃÓÑ»ı·ÖÓë¹·Á¸ = type=cron,cronexp="10 0-21/3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_joy_steal.js
-¾©Ğ¡¶Ò = type=cron,cronexp="40 8,16,20 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jxd.js
-¾©Ï²Å©³¡ = type=cron,cronexp="0 9,12,18 * * *",timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jxnc.js
-¾©¶«¿ìµİÇ©µ½ = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_kd.js
-¾©¶«Ö±²¥ = type=cron,cronexp="10-20/5 12 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_live.js
-³¬¼¶Ö±²¥¼äºì°üÓê = type=cron,cronexp="30,31 20-23/1 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_live_redrain.js
-¾©¶«Ò¡Ç®Ê÷ = type=cron,cronexp="3 0-23/2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_moneyTree.js
-¾©¶«ÃëÃë±Ò = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_ms.js
-µãµãÈ¯ = type=cron,cronexp="10 0,20 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_necklace.js
-Å®×°Ã¤ºĞ = type=cron,cronexp="0 8 9-20/1 3 * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_nzmh.js
-¶«¶«ÃÈ³è = type=cron,cronexp="15 6-18/6 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_pet.js
-¾©¶«½ğÈÚÑøÖíÖí = type=cron,cronexp="12 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_pigPet.js
-¾©¶«ÖÖ¶¹µÃ¶¹ = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_plantBean.js
-¾©¶«±£¼Û = type=cron,cronexp="0 2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_price.js
-¾©¶«È«Ãñ¿ªºì°ü = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_redPacket.js
-ÉÁ¹ºÃ¤ºĞ = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_sgmh.js
-½øµêÁì¶¹ = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_shop.js
-¶«¶«Ğ¡ÎÑ = type=cron,cronexp="16 22 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_small_home.js
-ÌìÌì¼ÓËÙ = type=cron,cronexp="8 0-23/3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed.js
-¾©¶«¼«ËÙ°æºì°ü = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed_redpocke.js
-¾©¶«¼«ËÙ°æ = type=cron,cronexp="0 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed_sign.js
-¶«¶«³¬ÊĞ = type=cron,cronexp="11 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_superMarket.js
-×¬¾©¶¹ = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_syj.js
-È¡¹Ø¾©¶«µêÆÌÉÌÆ· = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_unsubscribe.js
-ÊÖ»úÉĞÑ§¼¾ = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_xtg.js
-¾©Ï²Ç©µ½ = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jx_sign.js
-ÊÖ»úÉĞÑ§¼¾ = type=cron,cronexp="0 0 15-19 3 *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_xtg.js
-Ğ¡Ã×ÔË¶¯ = type=cron,cronexp="15 17 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/xmSports.js
-Ğ¡Ã×ÔË¶¯»ñÈ¡Token = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/xmSports.js
+äº¬ä¸œå¤šåˆä¸€ç­¾åˆ° = type=cron,cronexpr="5 0,12,23 * * *",wake-system=1,timeout=20,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js
+5Gè¶…çº§ç›²ç›’ = type=cron,cronexp="0 0,1-23/3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_mohe.js
+äº¬ä¸œèµ„äº§å˜åŠ¨é€šçŸ¥ = type=cron,cronexp=2 9 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bean_change.js
+é¢†äº¬è±†é¢å¤–å¥–åŠ± = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bean_home.js
+ä¸œä¸œè¶…å¸‚å…‘æ¢å¥–å“ = type=cron,cronexp="0 0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_blueCoin.js
+å£è¢‹ä¹¦åº— = type=cron,cronexp="1 8,12,18 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bookshop.js
+äº¬ä¸œæ±½è½¦ = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_car.js
+äº¬ä¸œæ±½è½¦å…‘æ¢ = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_car_exchange.js
+ç­¾åˆ°é¢†ç°é‡‘ = type=cron,cronexp="2 0-23/4 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_cash.js
+äº¬å–œè´¢å¯Œå²› = type=cron,cronexp="5 0,8,13,19 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_cfd.js
+æ‘‡äº¬è±† = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_club_lottery.js
+crazyJoyä»»åŠ¡ = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy.js
+ç›‘æ§crazyJoyåˆ†çº¢ = type=cron,cronexp="10 12 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy_bonus.js
+crazyJoyæŒ‚æœº = type=cron,cronexp="10 1,12 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_crazy_joy_coin.js
+å¤©å¤©æé¹… = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_daily_egg.js
+äº¬å–œå·¥å‚ = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_dreamFactory.js
+äº¬ä¸œå®¶åº­å· = type=cron,cronexp="1 12,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_family.js
+ä¸œä¸œå†œåœº = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_fruit.js
+è·å–äº’åŠ©ç  = type=cron,cronexp="20 13 * * 6",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_get_share_code.js
+ä¸œä¸œå·¥å‚ = type=cron,cronexp="10 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jdfactory.js
+äº¬ä¸œèµšèµš = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jdzz.js
+äº¬å°å…‘ = type=cron,cronexp="40 8,16,20 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jxd.js
+äº¬å–œå†œåœº = type=cron,cronexp="0 9,12,18 * * *",timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jxnc.js
+äº¬ä¸œå¿«é€’ç­¾åˆ° = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_kd.js
+äº¬ä¸œæ‘‡é’±æ ‘ = type=cron,cronexp="3 0-23/2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_moneyTree.js
+ç‚¹ç‚¹åˆ¸ = type=cron,cronexp="10 0,20 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_necklace.js
+ä¸œä¸œèŒå®  = type=cron,cronexp="15 6-18/6 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_pet.js
+äº¬ä¸œç§è±†å¾—è±† = type=cron,cronexp="1 7-21/2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_plantBean.js
+äº¬ä¸œä¿ä»· = type=cron,cronexp="0 2 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_price.js
+äº¬ä¸œå…¨æ°‘å¼€çº¢åŒ… = type=cron,cronexp=1 1 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_redPacket.js
+é—ªè´­ç›²ç›’ = type=cron,cronexp="20 8 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_sgmh.js
+è¿›åº—é¢†è±† = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_shop.js
+ä¸œä¸œå°çª = type=cron,cronexp="16 22 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_small_home.js
+å¤©å¤©åŠ é€Ÿ = type=cron,cronexp="8 0-23/3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed.js
+äº¬ä¸œæé€Ÿç‰ˆçº¢åŒ… = type=cron,cronexp="0 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed_redpocke.js
+äº¬ä¸œæé€Ÿç‰ˆ = type=cron,cronexp="0 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_speed_sign.js
+ä¸œä¸œè¶…å¸‚ = type=cron,cronexp="11 * * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_superMarket.js
+èµšäº¬è±† = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_syj.js
+å–å…³äº¬ä¸œåº—é“ºå•†å“ = type=cron,cronexp="55 23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_unsubscribe.js
+äº¬å–œç­¾åˆ° = type=cron,cronexp="5 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jx_sign.js
 
 [MITM]
 hostname = %APPEND% me-api.jd.com, api.m.jd.com, draw.jdfcloud.com, jdjoy.jd.com, account.huami.com
