@@ -1,6 +1,6 @@
 #!name=京东模块
 #!desc=签到模块配置
-# Surge的Task&Cookies脚本模块地址: https://raw.githubusercontent.com/kitnoob/lxk_script/main/Surge/lxk0301_Task.sgmodule.sgmodule
+# Surge的Task&Cookies脚本模块地址: https://raw.githubusercontent.com/aa75017730/Surge/main/task/Task.sgmodule
 #!system=ios
 
 [Script]
