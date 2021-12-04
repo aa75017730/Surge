@@ -1,11 +1,7 @@
 #!name=京东模块
-2
 #!desc=签到模块配置
-3
 #!system=ios
-4
-​
-5# Surge的Task&Cookies脚本模块地址: https://raw.githubusercontent.com/aa75017730/Surge/main/task/Task.sgmodule
+# Surge的Task&Cookies脚本模块地址: https://raw.githubusercontent.com/aa75017730/Surge/main/task/Task.sgmodule
 
 
 [Script]
