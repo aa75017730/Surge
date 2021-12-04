@@ -1,6 +1,7 @@
 #!name=Sub-Store
 #!desc=高级订阅管理工具
 
+
 [MITM]
 hostname=%APPEND% sub.store
 
