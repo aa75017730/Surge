@@ -2,7 +2,7 @@
 #!desc=淘宝、京东、百度云、WPS、抖音(≤16.2.0)等脚本
 
 [MITM]
-hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com,api|api-cs.intsig.net, 
+hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com,api-cs.intsig.net, 
 [Script]
 BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
 # 比价脚本 （淘宝若未加载脚本运行，得卸载重装）
