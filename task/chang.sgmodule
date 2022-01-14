@@ -1,5 +1,5 @@
 #!name=淘宝、京东比价、百度云、WPS、抖音
-#!desc=淘宝、京东、百度云、WPS、抖音(≤16.2.0)等脚本
+#!desc=淘宝、京东、百度云、WPS、扫描全能王、抖音(≤16.2.0)等脚本
 
 [MITM]
 hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com,api-cs.intsig.net, 
