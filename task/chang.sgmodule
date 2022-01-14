@@ -2,7 +2,7 @@
 #!desc=淘宝、京东、百度云、WPS、抖音(≤16.2.0)等脚本
 
 [MITM]
-hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com
+hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com,api|api-cs.intsig.net, 
 [Script]
 BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
 # 比价脚本 （淘宝若未加载脚本运行，得卸载重装）
@@ -15,6 +15,9 @@ http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-b
 #http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 #^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 WPS = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+# > 扫描全能王 pro
+扫描全能 = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/id77/QuantumultX/master/Script/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
+
 # 抖音去水印 需搭配重写
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
 
