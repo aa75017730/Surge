@@ -7,6 +7,7 @@ hostname = spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.c
 # > spotify部分解锁premium
 spotify解锁premium = type=http-response,requires-body=1,max-size=0,pattern=^https\:\/\/spclient\.wg\.spotify\.com\/(bootstrap\/v1\/bootstrap|user-customization-service\/v1\/customize)$,script-path=https://raw.githubusercontent.com/app2smile/rules/master/js/spotify-proto.js
 ;hostname = spclient.wg.spotify.com
+;hostname = spclient.wg.spotify.com
 # > 扫描全能王 pro
 扫描全能王 pro = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/camscanner.js,type=http-response,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,script-update-interval=0
 # > Polaris Office解锁订阅 (支持新版9.6.3)  by:2021-12-29
