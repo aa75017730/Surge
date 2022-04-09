@@ -1,0 +1,10 @@
+#!name=Notability解锁订阅
+#!desc=解锁订阅
+
+[Script]
+Notability解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/notability\.com\/subscriptions,script-path=https://raw.githubusercontent.com/yqc007/QuantumultX/master/NotabilityProCrack.js
+
+
+
+[MITM]
+hostname = notability.com
