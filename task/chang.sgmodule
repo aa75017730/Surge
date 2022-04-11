@@ -8,7 +8,7 @@ BoxJs = type=http-request,script-path=https://gitee.com/chavyleung/scripts/raw/m
 # 比价脚本 （淘宝若未加载脚本运行，得卸载重装）
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
-京东比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+京东比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js
 # 百度网盘
 http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
 # WPS
