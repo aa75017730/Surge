@@ -1,1 +1,1 @@
-# Suege 配置
+# Suege 自用配置
