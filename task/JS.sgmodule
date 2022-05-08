@@ -4,6 +4,8 @@
 [MITM]
 hostname = mp.weixin.qq.com, *.kuwo.cn, notability.com,  %APPEND% testflight.apple.com, spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, sub.store, %APPEND% sub.store, www.maoke123.com, avoscloud.com, 
 [Script]
+# > BOXJS
+BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
 
 # > Sub-Store高级订阅管理工具
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
