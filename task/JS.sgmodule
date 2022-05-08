@@ -2,7 +2,8 @@
 #!desc=app解锁使用的规则
 
 [MITM]
-hostname = mp.weixin.qq.com, *.kuwo.cn, notability.com,  %APPEND% testflight.apple.com, spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, sub.store, %APPEND% sub.store, www.maoke123.com, avoscloud.com, 
+hostname = mp.weixin.qq.com, *.kuwo.cn, notability.com,  %APPEND% testflight.apple.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, sub.store, %APPEND% sub.store, www.maoke123.com, avoscloud.com, api*.amemv.com,aweme.snssdk.com, 
+
 [Script]
 # > BOXJS
 BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
@@ -14,6 +15,20 @@ Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https:/
 # > TestFlight区域限制解除
 TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
 ;hostname= %APPEND% testflight.apple.com
+
+# > 京东淘宝历史价格 （淘宝若未加载脚本运行，得卸载重装）
+淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+京东比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
+;hostname= api.m.jd.com, trade-acs.m.taobao.com
+
+# > 百度网盘
+http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+;hostname= pan.baidu.com
+
+# > WPS解锁会员
+WPS = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
+;hostname= account.wps.cn
 
 # > 微信去广告
 微信去广告 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/mp\.weixin\.qq\.com\/mp\/getappmsgad\?,script-path=https://raw.githubusercontent.com/yjqiang/surge_scripts/main/scripts/wechat/wechat_public_accounts.js
@@ -106,3 +121,16 @@ XMind解锁Pro = type=http-response,requires-body=1,max-size=0,pattern=https:\/\
 # > LaunchCenter解锁订阅
 LaunchCenter解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/LaunchCenterProCrack.js
 ;hostname = buy.itunes.apple.com
+
+# > 抖音去水印 需搭配重写
+douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
+;hostname = api*.amemv.com,aweme.snssdk.com
+
+[URL Rewrite]
+# Redirect Google Search/Maps Service
+^https?:\/\/(www.)?(g|google)\.cn https://www.google.com 302
+^https?:\/\/(ditu|maps).google\.cn https://maps.google.com 302
+# 抖音去开屏去广告兼无水印
+^https?:\/\/(api.*\.amemv|aweme\.snssdk)\.com\/api\/ad\/ - reject
+^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/(?!(comment|namek|series|shop)) https://aweme.snssdk.com/aweme/v1/ header
+
