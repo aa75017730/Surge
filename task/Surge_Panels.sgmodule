@@ -1,33 +1,96 @@
 #!name=Surge Panels
-#!desc=Surge 信息面板
+#!desc=信息面板
 
 [Panel]
-Panel = title=TributePaulWalker, content=GitHub:https://github.com/TributePaulWalker,icon=aqi.medium,icon-color=#5AC8FA
+#Surge Pro标题,可显示启动时间,点击刷新为重载配置
+SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
 
-节假日提醒 = script-name=节假日提醒,update-interval=600
+# 节假日查询
+timecard = script-name=timecard,update-interval=3600
 
-疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=600
+# 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=600
 
-Sub_Info_Panel = script-name= Sub_Info_Panel, update-interval=600
+#流量统计
+TrafficStatistics = script-name=TrafficStatistics,update-interval=1
 
-Sub_info_panel1 = script-name=Sub_info_panel1,update-interval=600
+# net-info-panel=title="网络状态",content="请刷新",style=info,script-name=net-info-panel
 
-网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=60
+# net_info_ip=title=网络状态,style=info,script-name=net_info_ip,update-interval=1
 
-配置重载 = title=配置重载,content=配置重载,style=info,script-name=配置重载,update-interval=-1
+#网络详情
+# NET_info = script-name=NET_info,update-interval=1
+
+# 流媒体解锁检测
+stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
+
+#Netflix查询
+# nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=36000
+#Disney查询
+# disney_check = script-name=disney_check, title=Disney+ 解锁检测, content=请刷新, update-interval=36000
+#YouTube
+# ytb_check = script-name=ytb_check, title="YouTube Premium 解锁检测", update-interval=36000
+
+
+# flush DNS
+#flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
+
+#Disney+策略组自动控制
+#DisneySelect = script-name=DisneySelecter, update-interval=3600
+
+#Netflix策略组自动控制
+#NetflixSelect = script-name=NetflixSelect, update-interval=3600
+
+#策略组面板 可重复配置 注意修改相应字段
+#groupPanel= script-name=groupPanel,update-interval=5
 
 
 [Script]
-节假日提醒 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Timecard.js
+#附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
+SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/surgepro_reloadprofile.js ,argument=icon=crown.fill&color=#f6c970
 
-疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Covid19.js
+#流量统计 点击以切换网络界面
+TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
 
-# encode地址链接: https://www.urlencoder.org/
-Sub_Info_Panel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=29&title=AmyInfo&icon=icloud&color=#5AC8FA
+#網路詳情 标题显示为根节点名
+#应当修改的字段 group 代理策略组名称
+# NET_info = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/net_info.js,argument=icon=externaldrive.connected.to.line.below&color=#9a7ff7&group=🐷 𝐏𝐫𝐨𝐱𝐲
 
-Sub_info_panel1 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=[URL encode 后的机场节点链接]&reset_day=28&title=E-Net&icon=icloud&color=#5AC8FA
+# net_info_ip = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Panel/NetInfoPanel.js,script-update-interval=0
 
+# net-info-panel = script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Panel/Net-info-panel.js,type=generic,script-update-interval=0
 
-网络信息 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/ipcheck.js
+# 节假日提醒
+timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Timecard.js
 
-配置重载 = script-path=https://raw.githubusercontent.com/TributePaulWalker/Profiles/main/JavaScript/Surge/Profile-Reload.js,type=generic
+#疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/kkfive/Proxy_Rules/main/Surge/script/Covid19.js
+
+# dns
+#flushDNS = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/zZPiglet/Task/master/asset/flushDNS.js,argument=title=DNS FLush&icon=arrow.clockwise&color=#3d3d5b
+
+#机场信息
+#必须修改的字段:你encode后的机场订阅链接
+
+#流媒体解锁检测
+stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/stream-all.js
+
+# Netflix+检测
+# nf_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/b06e911a41036ebc36acf04ddebe7b9a/raw/nf_check.js
+#YouTube+检测
+#ytb_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/5ae36a6a5cb5690b1f2bff4aa19c766f/raw/youtube_premium_check.js
+#Disney+检测
+#disney_check = type=generic,timeout=5,script-path=https://gist.githubusercontent.com/Hyseen/729fc4c3ac28c3f2e7c4a832d81780f3/raw/disney_check.js
+#节点检测
+#节点检测 = type=generic, timeout=3, script-path=https://raw.githubusercontent.com/LucaLin233/Luca_Conf/main/Surge/JS/ipcheck.js
+
+#disney+策略组控制
+#应当修改的#DisneyChecker = type=cron,cronexp=35 4 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disney_checker.js,script-update-interval=86400,control-api=1#netflix策略组控制
+#必须更改的字段 netflixGroup 填写你Netflix策略组名称
+#详情请阅读：https://github.com/fishingworld/something/blob/main/NetflixSelect/README.md
+#NetflixSelect = type=generic, script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/nf_autoselect.js, argument=icon1=checkmark.circle&color1=#55ba94&icon2=checkmark.circle.trianglebadge.exclamationmark&color2=#9a9ced&icon3=hand.raised.circle&color3=#ea5532&netflixGroup=Netflix
+#NetflixChecker = type=cron,cronexp=5 4 * * *,wake-system=1,timeout=3600,script-path=https://raw.githubusercontent.com/fishingworld/something/main/NetflixSelect/nf_autocheck.js ,script-update-interval=0,control-api=1
+
+#策略组面板 可重复配置 注意修改相应字段
+#必须更改的字段：group 填写需要显示的策略组名称
+groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=Master字段 disneyGroup Disney+的策略组名称
+#详情请阅读：https://github.com/fishingworld/something/tree/main/DisneySelect
+#DisneySelecter = type=generic, script-path=https://raw.githubusercontent.com/fishingworld/something/main/DisneySelect/disney_selecter.js, argument=icon1=checkmark.circle&color1=#55ba94&icon2=cursorarrow.click.badge.clock&color2=#ed6c84&icon3=xmark.shield&color3=#AF52DE&disneyGroup=Disney+
