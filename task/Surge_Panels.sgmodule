@@ -6,7 +6,7 @@
 SurgePro_ReloadProfile = script-name=SurgePro_ReloadProfile,update-interval=1
 
 # 节假日查询
-# timecard = script-name=timecard,update-interval=3600
+timecard = script-name=timecard,update-interval=3600
 
 # 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=600
 
@@ -60,7 +60,7 @@ SurgePro_ReloadProfile = type=generic,timeout=10,script-path= https://raw.github
 # net-info-panel = script-path=https://raw.githubusercontent.com/ventusoon/ventus/main/Panel/Net-info-panel.js,type=generic,script-update-interval=0
 
 # 节假日提醒
-# timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Timecard.js
+timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Timecard.js
 
 #疫情统计 = type=generic, script-path=https://raw.githubusercontent.com/kkfive/Proxy_Rules/main/Surge/script/Covid19.js
 
