@@ -41,7 +41,7 @@ timecard = script-name=timecard,update-interval=3600
 #NetflixSelect = script-name=NetflixSelect, update-interval=3600
 
 #策略组面板 可重复配置 注意修改相应字段
-#groupPanel= script-name=groupPanel,update-interval=5
+groupPanel= script-name=groupPanel,update-interval=5
 
 
 [Script]
