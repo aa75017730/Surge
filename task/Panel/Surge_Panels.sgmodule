@@ -52,7 +52,7 @@ Sub_info_Flower = script-name=Sub_info_Flower,update-interval=600
 timePanel = type=generic,script-path= https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Time.js,argument=icon=crown.fill&color=#754FE6
 
 #流量统计 点击以切换网络界面
-TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#754FE6
 
 #網路詳情 标题显示为根节点名
 #应当修改的字段 group 代理策略组名称
