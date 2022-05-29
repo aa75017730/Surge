@@ -21,7 +21,7 @@ timecard = script-name=timecard,update-interval=3600
 # 疫情统计 = script-name=疫情统计, title=新冠疫情查询, content=请刷新, update-interval=600
 
 # 流媒体解锁检测
-stream-all = script-name=stream-all, title="流媒体解锁检测", content="请刷新面板", update-interval=-1
+stream-all = script-name=stream-all, title=" ҉流҉媒҉体҉解҉锁҉检҉测҉", content="请刷新面板", update-interval=-1
 
 #Netflix查询
 # nf_check = script-name=nf_check, title="Netflix 解锁检测", content="请刷新", update-interval=36000
