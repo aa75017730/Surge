@@ -46,6 +46,9 @@ Sub_info_Flower = script-name=Sub_info_Flower,update-interval=600
 #策略组面板 可重复配置 注意修改相应字段
 # groupPanel= script-name=groupPanel,update-interval=5
 
+#策略组面板 可重复配置 注意修改相应字段
+groupPane3= script-name=groupPanel,update-interval=5
+
 
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
@@ -100,3 +103,9 @@ stream-all = type=generic, timeout=15, script-path=https://raw.githubusercontent
 #策略组面板 可重复配置 注意修改相应字段
 #必须更改的字段：group 填写需要显示的策略组名称
 #groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#86abee&group=Master
+
+#策略组面板 可重复配置 注意修改相应字段
+#必须更改的字段：group 填写需要显示的策略组名称
+groupPane3 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js ,argument=icon=network&color=#754FE6&group=🔘 手动选择
+
+
