@@ -32,7 +32,7 @@ stream-all = script-name=stream-all, title=" ҉流҉媒҉体҉解҉锁҉检҉测
 #flushDNS = script-name=flushDNS, title="Flush DNS", content="请刷新", update-interval=600
 
 #机场信息
-Sub_info_Flower = script-name=Sub_info_Flower,update-interval=600
+# Sub_info_Flower = script-name=Sub_info_Flower,update-interval=600
 #Sub_info_Nexitally = script-name=Sub_info_Nexitally,update-interval = 600
 
 #Disney+策略组自动控制
@@ -68,7 +68,7 @@ timecard = type=generic,timeout=10,script-path=https://raw.githubusercontent.com
 
 #机场信息
 #必须修改的字段:你encode后的机场订阅链接
-Sub_info_Flower = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https://www.naiun.co/api/v1/client/subscribe%3Ftoken%3De51c1b4641c9afb7c8bd19cef4729c25&title=奈҈̫͖̗̙̖͒̀云̴̞̥͚̂̿̀̈́̔&icon=flame.fill&color=#754FE6
+# Sub_info_Flower = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https://www.naiun.co/api/v1/client/subscribe%3Ftoken%3De51c1b4641c9afb7c8bd19cef4729c25&title=奈҈̫͖̗̙̖͒̀云̴̞̥͚̂̿̀̈́̔&icon=flame.fill&color=#754FE6
 #Sub_info_Nexitally = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info_panel.js,script-update-interval=0,argument=url=https://api.ikuuu.science/link/wikhfS2ywVm1gEHs?sub=5&reset_day=1&title=ikuuuu&icon=airplane.circle&color=#16A951
 
 #流媒体解锁检测
