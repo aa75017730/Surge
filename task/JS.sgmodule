@@ -2,7 +2,7 @@
 #!desc=app解锁使用的规则
 
 [MITM]
-hostname = bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com,  %APPEND% testflight.apple.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, api*.amemv.com,aweme.snssdk.com, 
+hostname = bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, api*.amemv.com,aweme.snssdk.com, 
 
 [Script]
 
@@ -16,8 +16,8 @@ App价格监控 = type=cron,cronexp=30 7-22 * * *,wake-system=1,timeout=6000,scr
 BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
 
 # > TestFlight区域限制解除 %APPEND% testflight.apple.com
-TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
-
+#TF下载修正 = type=http-request,pattern=^https?:\/\/testflight\.apple\.com\/v\d\/accounts\/.+?\/install$,requires-body=1,max-size=0,script-path=https://gist.githubusercontent.com/NobyDa/9be418b93afc5e9c8a8f4d28ae403cf2/raw/TF_Download.js
+#hostname = %APPEND% testflight.apple.com,
 # > 京东淘宝历史价格 （淘宝若未加载脚本运行，得卸载重装）api.m.jd.com, trade-acs.m.taobao.com
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
@@ -65,60 +65,60 @@ Picsew解锁专业版 = type=http-response,requires-body=1,max-size=0,pattern=^h
 
 # > PlaneVPN解锁订阅 (待验证)
 PlaneVPN解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/PlaneVPNProCrack.js
-;hostname = buy.itunes.apple.com
+#hostname = buy.itunes.apple.com
 
 # > 新语听书解锁会员(支持新版4.2.9)  by:2021-12-29
 新语听书解锁会员 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/i\.xinyulib\.com\.cn\/api\/querytoken.+,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/XinYuLibraryProCrack.js
-;hostname = i.xinyulib.com.cn
+#hostname = i.xinyulib.com.cn
 
 # > 1Blocker解锁(支持新版5.1.1)  by:2021-12-29
 1Blocker解锁 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.revenuecat\.com\/v1\/receipts,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/1Blocker.js
-;hostname =  api.revenuecat.com
+#hostname =  api.revenuecat.com
 
 # > 傲软抠图解锁会员 (支持新版1.5.1)  by:2021-12-29
 傲软抠图解锁会员 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/gw\.aoscdn\.com\/base\/vip\/client\/authorizations$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/BackgroundEraserProCrack.js
-;hostname = gw.aoscdn.com
+#hostname = gw.aoscdn.com
 
 # > XMind解锁Pro(先下载低版本如2.0.0,登陆帐号后显示Pro然后再更新至新版，目前更新至3.1.3还是会有Pro会员，理论上可持续更新)
 XMind解锁Pro = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/www\.xmind\.cn\/\_res\/devices,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/XMind.js
-;hostname = www.xmind.cn
+#hostname = www.xmind.cn
 
 # > 趣制作2.1.1解锁Pro ——>下载地址:https://apps.apple.com/cn/app/id1449242864
 趣制作2.1.1解锁Pro = type=http-response,requires-body=1,max-size=0,pattern=^https://cm.szsszykj.com/interface/GetVip.php,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/qzz.js
-;hostname = cm.szsszykj.com
+#hostname = cm.szsszykj.com
 
 # > 美颜相机 v9.6.20版本(by-嘿嘿酱)
-;美颜相机 v9.6.20版本 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/Meiyanxiangji.js
-;hostname = api.meiyan.com
+#美颜相机 v9.6.20版本 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/api\.meiyan\.com\/vip\/user_info,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/Meiyanxiangji.js
+#hostname = api.meiyan.com
 
 # > 美颜相机解锁紫钻 by:@RickeyErickson(2022.01.15)
 美颜相机解锁紫钻 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.account\.meitu\.com\/(common\/check_device_login_pwd|users\/show_current\.json),script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/MeiYanXiangJi.js
 美颜相机解锁紫钻 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api\.meiyan\.com\/vip\/(user_center\.json|user_info\.json),script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/MeiYanXiangJi.js
-;hostname = api.meiyan.com, api.account.meitu.com
+#hostname = api.meiyan.com, api.account.meitu.com
 
 # > 嘀嗒清单(by Choler)   支持最新本6.1.70  by:2021-12-29
 嘀嗒清单 = type=http-response,requires-body=1,max-size=0,pattern=^https:\/\/(ticktick|dida365)\.com\/api\/v2\/user\/status,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/DiDaQingDan.js
-;hostname = ticktick.com
+#hostname = ticktick.com
 
 # > 解锁马卡龙  支持最新版5.3.1  by:2021-12-29
 解锁马卡龙玩图 = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/app\.api\.versa-ai\.com\/pay\/order\/iap\/check,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/mkl.js
-;hostname = app.api.versa-ai.com
+#hostname = app.api.versa-ai.com
 
 # > 糖心VLog网页版解锁会员
 糖心VLog网页版解锁会员 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/txv04\.com\/h5\/user\/findQrcode$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/TXVWCrack.js
-;hostname = txv04.com
+#hostname = txv04.com
 
 # > 酷我2496解锁会员
 酷我2496解锁会员 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/api_2496\.kuwo\.cn\/front\/user\/vipstatus$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/KWLongPlayProCrack.js
-;hostname = api_2496.kuwo.cn
+#hostname = api_2496.kuwo.cn
 
 # > LaunchCenter解锁订阅
 LaunchCenter解锁订阅 = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/buy\.itunes\.apple\.com\/verifyReceipt$,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/LaunchCenterProCrack.js
-;hostname = buy.itunes.apple.com
+#hostname = buy.itunes.apple.com
 
 # > 抖音去水印 需搭配重写
 douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]\/((|follow\/|nearby\/)feed|aweme\/post|hot\/search\/video\/list|mix\/aweme|aweme\/detail)\/\?,requires-body=1,script-path=https://raw.githubusercontent.com/Choler/Surge/master/Script/douyin.js
-;hostname = api*.amemv.com,aweme.snssdk.com
+#hostname = api*.amemv.com,aweme.snssdk.com
 
 [URL Rewrite]
 # Redirect Google Search/Maps Service
