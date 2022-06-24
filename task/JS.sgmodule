@@ -2,7 +2,7 @@
 #!desc=app解锁使用的规则
 
 [MITM]
-hostname = bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, api*.amemv.com,aweme.snssdk.com, %APPEND% *.tiktokv.com, *.byteoversea.com, *.tik-tokapi.com 
+hostname = bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, api*.amemv.com,aweme.snssdk.com,
 
 [Script]
 
@@ -127,7 +127,3 @@ douyin = type=http-response,pattern=^https?:\/\/aweme\.snssdk\.com\/aweme\/v[12]
 # 抖音去开屏去广告兼无水印
 ^https?:\/\/(api.*\.amemv|aweme\.snssdk)\.com\/api\/ad\/ - reject
 ^https?:\/\/api.*\.amemv\.com\/aweme\/v\d\/(?!(comment|namek|series|shop)) https://aweme.snssdk.com/aweme/v1/ header
-
-[Script]
-TK去水印 = type=http-response,pattern=https?:\/\/.*\.tiktokv\.com\/aweme\/v\d\/(feed|mix\/aweme|aweme\/post|(multi\/)?aweme\/detail|follow\/feed|nearby\/feed|search\/item|general\/search\/single|hot\/search\/video\/list|aweme\/favorite),requires-body=1,script-path=https://raw.githubusercontent.com/zyceson/scripts/master/k8.js
-
