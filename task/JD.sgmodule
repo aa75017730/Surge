@@ -8,7 +8,7 @@
 京东签到 = type=cron,cronexp="5 0,12,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0
 京东快递 = type=cron,cronexp="10 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_kd.js,script-update-interval=0
 签到领现金 = type=cron,cronexp="2 0 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_cash.js,script-update-interval=0
-点点券 = type=cron,cronexp=11 8 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_necklace.js,script-update-interval=0
+点点券 = type=cron,cronexp="11 8 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_necklace.js,script-update-interval=0
 领京豆额外奖励 = type=cron,cronexp="10 7 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_bean_home.js,script-update-interval=0
 京东农场 = type=cron,cronexp="5 1,5,10,15,20 * * *",wake-system=1,timeout=6000,script-path=Scrips/jd_fruit.js,script-update-interval=0
 京东萌宠 = type=cron,cronexp="5 6-18/6 * * *",wake-system=1,timeout=6000,script-path=Scrips/jd_pet.js,script-update-interval=0
@@ -18,9 +18,9 @@
 京东摇京豆 = type=cron,cronexp="5 0,12,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_club_lottery.js,script-update-interval=0
 京东赚赚 = type=cron,cronexp="0 3 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_jdzz.js,script-update-interval=0
 京东汽车 = type=cron,cronexp="10 4 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/kitnoob/lxk_script/main/jd_car.js,script-update-interval=0
-京东抽奖机 = type=cron,cronexp=11 0,23 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js,script-update-interval=0
-京东排行榜 = type=cron,cronexp=11 9,23 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js,script-update-interval=0
-京东极速版 = type=cron,cronexp=0 7,11,15,19 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/he1pu/JDHelp/main/jd_speed_sign.js,script-update-interval=0
-京东极速版红包 = type=cron,cronexp=20 0,22 * * *,wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/he1pu/JDHelp/main/jd_speed_redpocke.js,script-update-interval=0
+京东抽奖机 = type=cron,cronexp="11 0,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_lotteryMachine.js,script-update-interval=0
+京东排行榜 = type=cron,cronexp="11 9,23 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/yangtingxiao/QuantumultX/master/scripts/jd/jd_rankingList.js,script-update-interval=0
+京东极速版 = type=cron,cronexp="0 7,11,15,19 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/he1pu/JDHelp/main/jd_speed_sign.js,script-update-interval=0
+京东极速版红包 = type=cron,cronexp="20 0,22 * * *",wake-system=1,timeout=6000,script-path=https://raw.githubusercontent.com/he1pu/JDHelp/main/jd_speed_redpocke.js,script-update-interval=0
 [MITM]
 hostname = kd.youth.cn, api.m.jd.com, jdjoy.jd.com, draw.jdfcloud.com, daojia.jd.com, ms.jr.jd.com, wq.jd.com, %APPEND%api.m.jd.com, h5.m.jd.com, 
