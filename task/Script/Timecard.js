@@ -80,6 +80,6 @@ function datenotice() {
 $done({
 title:"节̶̬̭̝͂͋́͑假҉̖̱̦̜̭͗̈͌͂日̵̙̣̩͔̦̅̚倒̶͉̦̪̱̑̌͂̾̚计҉͙͇̤̱̠͋̂̚时҉̫̙̥̲̌̉",
 icon:"repeat.circle.fill",
-'icon-color': "#754FE6",
+'icon-color': "#03fc30",
 content:tlist[nowlist][0]+"  :  "+today(tnumcount(nowlist))+"天\n"+tlist[Number(nowlist) + Number(1)][0] +"  :  "+ tnumcount(Number(nowlist) + Number(1))+ "天\n"+tlist[Number(nowlist) + Number(2)][0]+"  :  "+tnumcount(Number(nowlist) + Number(2))+"天"
 })
