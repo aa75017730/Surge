@@ -37,7 +37,7 @@ $done({
     title:"𝓢𝓾𝓻𝓰𝓮 𝓟𝓻𝓸",
     content: "北京时间："+ (new Date()).Format("yyyy-MM-dd HH:mm:ss")+"\n启动时长："+startTime + "\nMitm:"+icon_status(mitm_status.enabled)+"  Rewrite:"+icon_status(rewrite_status.enabled)+"  Scripting:"+icon_status(scripting_status.enabled),
     icon: icon_s?"crown.fill":"exclamationmark.triangle",
-   "icon-color":icon_s?"#754FE6":"#F20C00"
+   "icon-color":icon_s?"#ea6d00":"#F20C00"
 });
 })();
 function icon_status(status){
