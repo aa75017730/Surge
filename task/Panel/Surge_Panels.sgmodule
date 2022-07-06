@@ -47,7 +47,7 @@ timecard = script-name=timecard,update-interval=3600
 
 [Script]
 #附带重载配置,Surge Pro标题,可显示启动时间,点击刷新为重载配置
-timePanel = type=generic,script-path= https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Time.js,argument=icon=crown.fill&color=#754FE6
+timePanel = type=generic,script-path= https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/Time.js,argument=icon=crown.fill&color=#ea6d00
 
 #流量统计 点击以切换网络界面
 # TrafficStatistics = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/aa75017730/Surge/main/task/Script/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#754FE6
