@@ -24,7 +24,7 @@ BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleu
 京东比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 
 # > 百度网盘 pan.baidu.com
-http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+百度网盘 = type=http-response,requires-body=1,max-size=0,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
 
 # > WPS解锁会员 account.wps.cn
 WPS = type=http-response,requires-body=1,max-size=0,pattern=^https?:\/\/account\.wps\.cn\/api\/users,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
