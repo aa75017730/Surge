@@ -2,9 +2,14 @@
 #!desc=app解锁使用的规则
 
 [MITM]
-hostname = %APPEND% aiqicha.baidu.com, bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, -*.amemv.com,aweme.snssdk.com,
+hostname = p.du.163.com, %APPEND% aiqicha.baidu.com, bmall.camera360.com, %APPEND% www.google.cn, mp.weixin.qq.com, *.kuwo.cn, notability.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, buy.itunes.apple.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, -*.amemv.com,aweme.snssdk.com,
 
 [Script]
+
+# > 网易蜗牛读书解锁特权
+网易蜗牛读书解锁特权= type=http-response,pattern=^https?:\/\/p\.du\.163\.com\/gain\/readtime\/info\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/wnyd.js
+#hostname = p.du.163.com
+
 # > 爱企查解锁VIP
 爱企查VIP= type=http-response,pattern=^https:\//aiqicha.baidu.com\/usercenter\/getvipinfoajax,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/aiqicha.js
 #hostname = aiqicha.baidu.com
@@ -21,6 +26,7 @@ BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleu
 # > TestFlight账户管理 %APPEND% testflight.apple.com
 TestFlight账户管理 = type=http-request,pattern=^https:\/\/testflight\.apple\.com\/v\d\/(app|account|invite)s\/,requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/TestFlight/TestFlightAccount.js
 #hostname = %APPEND% testflight.apple.com,
+
 # > 京东淘宝历史价格 （淘宝若未加载脚本运行，得卸载重装）api.m.jd.com, trade-acs.m.taobao.com
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
