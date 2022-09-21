@@ -1,9 +1,0 @@
-#!name=Fileball+解锁订阅
-#!desc=解锁订阅
-
-[Script]
-# > Fileball+解锁订阅
-Fileball+解锁订阅 = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(receipts|subscribers\/\$RCAnonymousID%3A\w{32})$,response-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/Fileball.js
-
-[MITM]
-hostname = api.revenuecat.com
