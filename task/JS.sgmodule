@@ -6,6 +6,10 @@ hostname = api.rr.tv, %APPEND% restore-access.indream.app, shimo.im, p.du.163.co
 
 
 [Script]
+# > CAD快速看图+解锁订阅
+CAD快速看图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/CDAkskt.js
+#hostname = buy.itunes.apple.com
+
 # > 多多视频(原人人视频)解锁VIP
 多多视频VIP = type=http-response,pattern=^https?:\/\/api\.rr\.tv\/\w{3}\/level\/info,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Script/rrtv_json.js
 #hostname = api.rr.tv
