@@ -3,8 +3,8 @@
 #!author=PayNe
 
 [Script]
-StormSnifferHeader = type=http-request, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$", script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferHeader.js, timeout=60, script-update-interval=0
-StormSnifferCrack = type=http-response, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$", requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/paynexss/Scripts/main/Scripts/StormSnifferCrack.js, timeout=60, script-update-interval=0
+StormSnifferHeader = type=http-request, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/.+$", script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/StormSnifferHeader.js, timeout=60, script-update-interval=0
+StormSnifferCrack = type=http-response, pattern="^http[s]?:\/\/api\.x-storm\.com(:\d{2,5})?\/app/user-profile\/$", requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/StormSnifferCrack.js, timeout=60, script-update-interval=0
 
 [MITM]
 hostname = %APPEND% *.x-storm.com
