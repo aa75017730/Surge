@@ -2,15 +2,14 @@
 #!desc=淘宝、京东、百度云、WPS、扫描全能王、抖音(≤16.2.0)等脚本
 
 [MITM]
-hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,pan.baidu.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com
+hostname = %APPEND% www.google.cn,api.m.jd.com,trade-acs.m.taobao.com,account.wps.cn,api*.amemv.com,aweme.snssdk.com
 [Script]
 BoxJs = type=http-request,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js,pattern=^https?://boxjs.net,max-size=131072,requires-body=true,timeout=120,enable=true
 # 比价脚本 （淘宝若未加载脚本运行，得卸载重装）
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^http://.+/amdc/mobileDispatch,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 淘宝比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,script-path=https://service.2ti.st/QuanX/Script/jd_tb_price/main.js
 京东比价 = type=http-response,requires-body=1,max-size=0,pattern=^https?://api\.m\.jd\.com/(client\.action|api)\?functionId=(wareBusiness|serverConfig|basicConfig|lite_wareBusiness|pingou_item),script-path=https://raw.githubusercontent.com/jnlaoshu/MySelf/main/Script/JDPrice.js
-# 百度网盘
-http-response https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user requires-body=1,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js
+
 # WPS
 #http-response ^https?:\/\/account\.wps\.cn\/api\/users requires-body=1,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
 #^https?:\/\/account\.wps\.cn\/api\/users url script-response-body https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Wps.js
