@@ -2,10 +2,22 @@
 #!desc=app解锁使用的规则
 
 [MITM]
-hostname = buy.itunes.apple.com, shimo.im, p.du.163.com, bmall.camera360.com,%APPEND% testflight.apple.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, -*.amemv.com,aweme.snssdk.com, 
+hostname = %APPEND% api.revenuecat.com, %APPEND% *.aliyundrive.com, *.alipan.com, buy.itunes.apple.com, shimo.im, p.du.163.com, bmall.camera360.com,%APPEND% testflight.apple.com, api.m.jd.com, trade-acs.m.taobao.com, pan.baidu.com, account.wps.cn, vip1.kuwo.cn, %APPEND% spclient.wg.spotify.com, api-cs.intsig.net, api_2496.kuwo.cn, txv04.com, api.polarisoffice.com, apivip.zybang.com, mall.zuoyebang.com, api.meiease.cn, i.xinyulib.com.cn, api.revenuecat.com, mp.weixin.qq.com, dida365.com, ticktick.com, api.meiyan.com, api.account.meitu.com, app.api.versa-ai.com, app.flashdown365.com, api.xiuxiu.meitu.com, h5.xiuxiu.meitu.com, ws.60he.com, app.xunjiepdf.com, splice.oracle.*.com, api.picsart.c*, api.meiease.c*, viva.v21xy.com, api.vnision.com, vsco.co, www.xmind.cn, cm.szsszykj.com, gw.aoscdn.com, bbs.maibaapp.com, testflight.apple.com, www.maoke123.com, avoscloud.com, -*.amemv.com,aweme.snssdk.com, 
 
 
 [Script]
+# > AIChat解锁Pro
+修改 = type=http-response,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js
+清理 = type=http-request,pattern=^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$),requires-body=0,max-size=0,script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js
+#hostname= %APPEND% api.revenuecat.com
+
+# > 阿里云净化，解锁SVIP部分
+阿里云净化，解锁SVIP部分 = type=http-response,pattern=^https?:\/\/(api|member)\.(aliyundrive|alipan)\.com\/(.+\/(users|activity|user\/get)|((business|apps)\/.+\/users|adrive\/.+\/user)),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chxm1023/Rewrite/main/alidrive.js
+#hostname = %APPEND% *.aliyundrive.com, *.alipan.com
+
+# > 嗨客源修复
+嗨客源修复 = type=http-request,pattern=^https?:\/\/repo\.qqtlr\.com\/\.\/downloads\.php%3Frequest=\d+\.deb,requires-body=false,script-path= https://raw.githubusercontent.com/rartv/SurgeScript/main/Jailbreak/SileoHiKe.js,debug=false
+
 # > CAD快速看图+解锁订阅
 CAD快速看图+解锁订阅 = type=http-response,pattern=^https:\/\/buy\.itunes\.apple\.com\/verifyReceipt,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/aa75017730/Quantumult-X/main/JS_failarmy/CDAkskt.js
 #hostname = buy.itunes.apple.com
